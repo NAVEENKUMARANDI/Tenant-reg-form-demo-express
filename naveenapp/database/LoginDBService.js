@@ -3,7 +3,7 @@ var url = "mongodb://localhost:27017/";
 
 /**
  * TenantDB Service - saveTenant method to save the tenant object in Mongo DB.
- * @param {*} tenantObject  - Tenant Json from Express router.
+ * @param {*} loginObject  - Tenant Json from Express router.
  */
 exports.saveTenant = (tenantObject) => {
 
