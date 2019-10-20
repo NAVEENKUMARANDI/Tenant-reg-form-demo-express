@@ -12,6 +12,7 @@ var usersRouter = require('./routes/users');
 var tenantRouter = require('./routes/tenant');
 var loginRouter = require('./routes/login');
 var flatdetailRouter = require('./routes/flatdetail');
+var ebmeterdetailRouter = require('./routes/ebmeterdetail');
 
 var app = express();
 
@@ -31,7 +32,7 @@ app.use('/users', usersRouter);
 app.use('/tenant', tenantRouter);
 app.use('/login', loginRouter);
 app.use('/flatdetail', flatdetailRouter);
-
+app.use('/ebmeterdetail', ebmeterdetailRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
